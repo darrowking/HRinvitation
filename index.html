@@ -1,0 +1,478 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="A luxury cinematic Tamil wedding invitation for Haswanth and Rithika."
+  >
+  <title>Haswanth &amp; Rithika | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="background.css">
+</head>
+<body>
+  <div class="photo-backdrop" aria-hidden="true"></div>
+  <div class="photo-clear" aria-hidden="true"></div>
+  <div class="photo-frost" aria-hidden="true"></div>
+  <div class="ambient-layer" aria-hidden="true">
+    <div class="ambient-orb ambient-orb-left"></div>
+    <div class="ambient-orb ambient-orb-right"></div>
+    <div class="petal-layer"></div>
+  </div>
+
+  <!-- Opening invitation screen -->
+  <div class="invitation-overlay" id="invitationOverlay">
+    <div class="invitation-card invitation-frame reveal reveal-visible">
+      <div class="invitation-seal"><img class="seal-logo" src="images/logo-hr.png" alt="Wedding logo"></div>
+      <p class="eyebrow">Wedding Invitation</p>
+      <h1><span>Haswanth</span> <span class="invitation-weds">weds</span> <span>Rithika</span></h1>
+      <p class="invitation-copy">
+        Together with their families invite you to celebrate their wedding
+      </p>
+      <div class="invitation-meta">
+        <span>20 April 2026</span>
+        <span>Aranthangi</span>
+      </div>
+      <button class="button button-primary" id="openInvitationBtn" type="button">
+        Open Invitation
+      </button>
+    </div>
+  </div>
+
+  <main class="site-shell" id="siteShell" aria-hidden="true">
+    <!-- Main cinematic website -->
+    <header class="hero section" id="home">
+      <div class="hero-media">
+        <video
+          class="hero-video"
+          src="videos/Video Project.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+        ></video>
+        <div class="hero-overlay"></div>
+      </div>
+
+      <nav class="hero-nav container reveal" data-reveal-delay="0.05s">
+        <a class="brand-mark" href="#home"><img class="brand-logo" src="images/logo-hr.png" alt="HR monogram logo"></a>
+                        <div class="hero-nav-links">
+          <a href="#couple">Couple</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#events">Events</a>
+          <a href="#rsvp">RSVP</a>
+          <a href="#event-company">Event company</a>
+        </div>
+      </nav>
+
+      <div class="hero-shell container">
+        <aside class="hero-side hero-side-left reveal" data-parallax="0.16" data-reveal-delay="0.15s">
+          <p class="hero-side-label">Reception</p>
+          <h2>19 April 2026</h2>
+          <p>5:30 PM - 9:00 PM</p>
+          <p>KVS Kalyana Mahal</p>
+        </aside>
+
+        <div class="hero-content invitation-frame" data-parallax="0.1">
+          <div class="hero-logo-glass" aria-hidden="true"></div>
+          
+          <p class="hero-kicker reveal" data-reveal-delay="0.1s">திருமண அழைப்பிதழ்</p>
+          <p class="hero-subline reveal" data-reveal-delay="0.2s">A celebration of grace, family, and sacred tradition</p>
+          <h1 class="hero-title reveal" data-reveal-delay="0.28s">
+            <span>Haswanth</span>
+            <span class="hero-weds">weds</span>
+            <span>Rithika</span>
+          </h1>
+          <div class="hero-date-block reveal" data-reveal-delay="0.38s">
+            <span>20 April 2026</span>
+            <span class="dot"></span>
+            <span>09:00 AM - 10:30 AM</span>
+          </div>
+          <div class="hero-actions reveal" data-reveal-delay="0.48s">
+            <a class="button button-primary" href="#events">View Events</a>
+            <a class="button button-secondary" href="#rsvp">Send RSVP</a>
+          </div>
+        </div>
+
+        <aside class="hero-side hero-side-right reveal" data-parallax="0.18" data-reveal-delay="0.2s">
+          <p class="hero-side-label">Wedding</p>
+          <h2>20 April 2026</h2>
+          <p>9:00 AM - 10:30 AM</p>
+          <p>Pattukottai Road, Aranthangi</p>
+        </aside>
+      </div>
+
+      <div class="hero-bottom container reveal" data-reveal-delay="0.58s">
+        <div class="hero-bottom-card">
+          <p class="eyebrow">Venue</p>
+          <h3>KVS Kalyana Mahal</h3>
+          <p>Pattukottai Road, Aranthangi - 614616</p>
+        </div>
+        <div class="hero-bottom-card hero-bottom-center">
+          <span class="bottom-line"></span>
+          <p>With love, blessings, music, and light</p>
+          <span class="bottom-line"></span>
+        </div>
+        <a class="hero-scroll-link" href="#couple">Scroll to Begin</a>
+      </div>
+    </header>
+
+    <section class="section section-ornate" id="couple">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">The Couple</p>
+          <h2>Two souls, one grand celebration</h2>
+          <p class="section-copy">
+            Framed by family, tradition, and the sacred promise of a new beginning.
+          </p>
+        </div>
+
+        <div class="family-blessing reveal" data-reveal-delay="0.1s">
+          <span class="family-line"></span>
+          <p>With the blessings of our parents and elders</p>
+          <span class="family-line"></span>
+        </div>
+
+        <div class="couple-grid">
+          <article class="couple-card invitation-frame reveal" data-reveal-delay="0.15s">
+            <p class="couple-label">Groom</p>
+            <h3>Haswanth R</h3>
+            <div class="couple-meta">
+              <p>Son of</p>
+              <p>Mr. Rengabasiam P</p>
+              <p>Mrs. Nagavani R</p>
+            </div>
+          </article>
+
+          <div class="divider-column reveal" aria-hidden="true" data-reveal-delay="0.25s">
+            <span class="divider-line"></span>
+            <span class="divider-medallion"><img class="divider-logo" src="images/logo-hr.png" alt="HR monogram logo"></span>
+            <span class="divider-line"></span>
+          </div>
+
+          <article class="couple-card invitation-frame reveal" data-reveal-delay="0.35s">
+            <p class="couple-label">Bride</p>
+            <h3>Rithika J</h3>
+            <div class="couple-meta">
+              <p>Daughter of</p>
+              <p>Mr. Jeganathan K</p>
+              <p>Mrs. Geetha V</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section section-ornate" id="gallery">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Photo Gallery</p>
+          <h2>Portraits composed with warmth and grandeur</h2>
+          <p class="section-copy">
+            Editorial imagery arranged in a premium masonry gallery for an elevated showcase.
+          </p>
+        </div>
+
+        <div class="masonry-gallery">
+          <button
+            class="gallery-item gallery-item-large reveal media-trigger"
+            type="button"
+            data-type="image"
+            data-src="images/_DSC5816.jpg"
+            data-title="Haswanth &amp; Rithika"
+            data-reveal-delay="0.08s"
+          >
+            <img src="images/_DSC5816.jpg" alt="Haswanth and Rithika portrait" loading="lazy">
+            <span class="gallery-caption">Signature Portrait</span>
+          </button>
+          <button
+            class="gallery-item reveal media-trigger"
+            type="button"
+            data-type="image"
+            data-src="images/_DSC5633.jpg"
+            data-title="Romantic portrait"
+            data-reveal-delay="0.16s"
+          >
+            <img src="images/_DSC5633.jpg" alt="Couple portrait in warm light" loading="lazy">
+            <span class="gallery-caption">Golden Hour</span>
+          </button>
+          <button
+            class="gallery-item reveal media-trigger"
+            type="button"
+            data-type="image"
+            data-src="images/_DSC5643.jpg"
+            data-title="Traditional elegance"
+            data-reveal-delay="0.24s"
+          >
+            <img src="images/_DSC5643.jpg" alt="Traditional wedding portrait" loading="lazy">
+            <span class="gallery-caption">Traditional Elegance</span>
+          </button>
+          <button
+            class="gallery-item reveal media-trigger"
+            type="button"
+            data-type="image"
+            data-src="images/_DSC5807.jpg"
+            data-title="Golden hour memories"
+            data-reveal-delay="0.32s"
+          >
+            <img src="images/_DSC5807.jpg" alt="Golden hour pre-wedding photograph" loading="lazy">
+            <span class="gallery-caption">Timeless Detail</span>
+          </button>
+          <button
+            class="gallery-item reveal media-trigger"
+            type="button"
+            data-type="image"
+            data-src="images/1.jpeg"
+            data-title="Wedding portrait"
+            data-reveal-delay="0.4s"
+          >
+            <img src="images/1.jpeg" alt="Wedding portrait" loading="lazy">
+            <span class="gallery-caption">Golden Aura</span>
+          </button>
+          <button
+            class="gallery-item reveal media-trigger"
+            type="button"
+            data-type="image"
+            data-src="images/2.jpeg"
+            data-title="Wedding detail"
+            data-reveal-delay="0.48s"
+          >
+            <img src="images/2.jpeg" alt="Wedding detail" loading="lazy">
+            <span class="gallery-caption">Sacred Details</span>
+          </button>
+          <button
+            class="gallery-item reveal media-trigger"
+            type="button"
+            data-type="image"
+            data-src="images/top%20angle.jpeg"
+            data-title="Top angle view"
+            data-reveal-delay="0.56s"
+          >
+            <img src="images/top%20angle.jpeg" alt="Top angle portrait" loading="lazy">
+            <span class="gallery-caption">Top Angle</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Celebrations</p>
+          <h2>An elegant two-day gathering</h2>
+        </div>
+
+        <div class="event-layout">
+          <article class="event-card invitation-frame reveal" data-reveal-delay="0.12s">
+            <p class="eyebrow">Reception</p>
+            <h2>Reception</h2>
+            <div class="event-meta">
+              <p><strong>Date:</strong> 19 April 2026</p>
+              <p><strong>Time:</strong> 5:30 PM - 9:00 PM</p>
+              <p><strong>Venue:</strong> KVS Kalyana Mahal</p>
+              <p>Pattukottai Road, Aranthangi - 614616</p>
+            </div>
+            <a
+              class="button button-secondary"
+              href="https://maps.app.goo.gl/syV9J57gR2MW78Gw9?g_st=ic"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Map
+            </a>
+          </article>
+
+          <article class="event-card invitation-frame reveal" data-reveal-delay="0.24s">
+            <p class="eyebrow">Wedding Ceremony</p>
+            <h2>Wedding Ceremony</h2>
+            <div class="event-meta">
+              <p><strong>Date:</strong> 20 April 2026</p>
+              <p><strong>Time:</strong> 9:00 AM - 10:30 AM</p>
+              <p><strong>Venue:</strong> KVS Kalyana Mahal</p>
+              <p>Pattukottai Road, Aranthangi - 614616</p>
+            </div>
+            <a
+              class="button button-secondary"
+              href="https://maps.app.goo.gl/syV9J57gR2MW78Gw9?g_st=ic"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Map
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section section-ornate" id="countdown">
+      <div class="container">
+        <div class="countdown-panel invitation-frame reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Countdown</p>
+            <h2>Awaiting the sacred muhurtham</h2>
+          </div>
+
+          <div class="countdown-grid" aria-live="polite">
+            <div class="countdown-item">
+              <span class="countdown-value" id="days">00</span>
+              <span class="countdown-label">Days</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-value" id="hours">00</span>
+              <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-value" id="minutes">00</span>
+              <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-value" id="seconds">00</span>
+              <span class="countdown-label">Seconds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP form -->
+    <section class="section" id="rsvp">
+      <div class="container">
+        <div class="rsvp-shell invitation-frame reveal">
+          <div class="rsvp-intro">
+            <p class="eyebrow">RSVP</p>
+            <h2>Confirm your gracious presence</h2>
+            <p>
+              Your blessings and presence will make our celebration complete. Kindly share your response.
+            </p>
+          </div>
+
+          <div class="rsvp-embed" aria-label="RSVP form">
+            <iframe
+              src="https://tally.so/embed/5BkeaQ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+              loading="lazy"
+              title="RSVP Form"
+              class="tally-embed"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-ornate" id="contact">
+      <div class="container">
+        <div class="contact-card invitation-frame reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Haswanth</h2>
+          <a href="tel:+919047347693">+91 90473 47693</a>
+          <a href="tel:+919943831535">+91 99438 31535</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container invitation-frame reveal">
+        <p>Make our special day even more special with your presence.</p>
+        <h2>Haswanth <span>&#10084;&#65039;</span> Rithika</h2>
+      </div>
+    </footer>
+
+  
+    <section class="section section-ornate" id="event-company">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Event Company</p>
+          <h2>Arrow Media</h2>
+          <p class="section-copy">Legacy Wedding Package</p>
+        </div>
+
+        <div class="legacy-card invitation-frame reveal" data-reveal-delay="0.12s">
+          <button class="legacy-toggle" type="button" aria-expanded="false" aria-controls="legacyContent">
+            <span class="legacy-toggle-title">Legacy Wedding Package</span>
+            <span class="legacy-toggle-icon" aria-hidden="true">+</span>
+          </button>
+
+          <div class="legacy-content" id="legacyContent" hidden>
+            <div class="legacy-header">
+              <img
+                class="legacy-logo"
+                src="images/arrow%20media%20logo.png"
+                alt="Arrow Media logo"
+                loading="lazy"
+              >
+              <div class="legacy-contact">
+                <p class="legacy-name">ARROW MEDIA</p>
+                <p>MRF Tyre Showroom Opp</p>
+                <p>Pudukkottai Road</p>
+                <p>Aranthangi, 614616</p>
+                <p><a href="tel:+917871843156">+91 78718 43156</a></p>
+              </div>
+            </div>
+
+            <p class="legacy-description">
+              This package provides complete end-to-end wedding event coverage with professional photography and cinematic
+              videography standards, perfectly suited for capturing every special moment of the marriage ceremony.
+            </p>
+
+            <ul class="legacy-list">
+              <li>Complete wedding coverage with traditional photography, videography, and drone shots.</li>
+              <li>One candid photography capturing real emotions and beautiful moments of your wedding day.</li>
+              <li>Two premium wedding albums beautifully designed to preserve your special memories.</li>
+              <li>complimentary Two couple magazine showcasing beautiful memories of the bride and groom.</li>
+              <li>Special coverage of bride and groom getting-ready moments and grand pyro entry.</li>
+              <li>Pre-wedding preparation shots capturing the bride and groom’s special moments.</li>
+              <li>Special Osmo 360 shot of the Thaali ceremony capturing the most emotional moment.</li>
+              <li>High-quality 12x8inchs LED wall  for real-time wedding event visuals.</li>
+              <li>Custom wedding website and digital invitation for easy sharing with family and friends.</li>
+            </ul>
+
+            <p class="legacy-thanks">Thank you for the opportunity to serve your Wedding.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+</main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close media">
+      &times;
+    </button>
+    <div class="lightbox-content" id="lightboxContent"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+﻿/* Client photo background overlay (replace the image path with the final client photo) */
+:root {
+  --client-bg-image: url("images/client-bg.jpg");
+  --photo-reveal: 0;
+}
+
+.photo-backdrop {
+  position: fixed;
+  inset: -8%;
+  background-image: var(--client-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(18px) saturate(1.05);
+  opacity: 0.5;
+  transform: scale(1.08);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.photo-clear {
+  position: fixed;
+  inset: -8%;
+  background-image: var(--client-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(2px) saturate(1.05);
+  opacity: calc(var(--photo-reveal) * 0.85);
+  transform: scale(1.02);
+  z-index: 0;
+  pointer-events: none;
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 70%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 70%);
+}
+
+.photo-frost {
+  position: fixed;
+  inset: auto 0 0 0;
+  height: 50vh;
+  background: linear-gradient(180deg, rgba(22, 7, 12, 0.02) 0%, rgba(22, 7, 12, 0.18) 55%, rgba(22, 7, 12, 0.34) 100%);
+  backdrop-filter: blur(16px) saturate(1.12);
+  opacity: calc(var(--photo-reveal) * 0.85);
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+
+
